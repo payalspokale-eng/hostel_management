@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find your people and your place at Juniper House, a welcoming design hostel in Copenhagen.">
+  <title>Juniper House | Stay a little closer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+      <div class="container site-container">
+        <a class="navbar-brand brand-lockup" href="#home" aria-label="Juniper House home">
+          <span class="brand-mark"><i class="bi bi-flower1" aria-hidden="true"></i></span>
+          <span>juniper<span class="brand-light">house</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+            <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+            <li class="nav-item"><a class="nav-link" href="#the-house">The house</a></li>
+            <li class="nav-item"><a class="nav-link" href="#neighborhood">Neighborhood</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-dark-green nav-book" href="#booking">Find your stay <i class="bi bi-arrow-up-right ms-2" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=2200&q=85" alt="Warm, sunlit shared room at Juniper House" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="container site-container hero-content">
+        <p class="eyebrow hero-eyebrow"><span class="eyebrow-dot"></span> COPENHAGEN, DENMARK <span class="eyebrow-divider">/</span> OPEN ALL YEAR</p>
+        <h1 id="hero-title">Juniper<br>House.</h1>
+        <p class="hero-copy">A good night's sleep. A table full of new friends.<br class="d-none d-sm-block"> Your Copenhagen story starts here.</p>
+        <a class="hero-link" href="#rooms">Come on in <span class="circle-arrow"><i class="bi bi-arrow-down" aria-hidden="true"></i></span></a>
+      </div>
+      <div class="hero-caption"><span>55° 41' N</span><span class="caption-line"></span><span>12° 33' E</span></div>
+      <div class="hero-stamp" aria-hidden="true"><span>GOOD PEOPLE</span><i class="bi bi-stars"></i><span>GOOD PLACES</span></div>
+    </section>
+
+    <section class="booking-section" id="booking" aria-labelledby="booking-title">
+      <div class="container site-container">
+        <div class="booking-heading">
+          <div>
+            <p class="eyebrow eyebrow-green">MAKE YOURSELF AT HOME</p>
+            <h2 id="booking-title">When are you coming?</h2>
+          </div>
+          <p class="booking-note"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Best price, always direct</p>
+        </div>
+        <form class="booking-form" id="bookingForm">
+          <div class="booking-field">
+            <label for="checkin">Check in</label>
+            <input id="checkin" name="checkin" type="date" required>
+          </div>
+          <div class="booking-field">
+            <label for="checkout">Check out</label>
+            <input id="checkout" name="checkout" type="date" required>
+          </div>
+          <div class="booking-field guests-field">
+            <label for="guests">Guests</label>
+            <select id="guests" name="guests">
+              <option value="1">1 guest</option>
+              <option value="2" selected>2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+            </select>
+          </div>
+          <button class="btn btn-lime booking-submit" type="submit">Check availability <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></button>
+        </form>
+        <p class="booking-feedback" id="bookingFeedback" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="rooms-section section-space" id="rooms" aria-labelledby="rooms-title">
+      <div class="container site-container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-green">A PLACE FOR EVERY KIND OF TRAVELLER</p>
+            <h2 id="rooms-title">Pick your kind<br class="d-md-none"> of cozy.</h2>
+          </div>
+          <p class="section-intro">Come solo, bring your favorite people, or make a few new ones. We've got a bed with your name on it.</p>
+        </div>
+        <div class="row g-4 room-grid">
+          <div class="col-md-6 col-lg-4">
+            <article class="room-card">
+              <div class="room-image-wrap">
+                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=80" alt="Thoughtful, light-filled dorm room" loading="lazy">
+                <span class="room-tag">FROM €29 / NIGHT</span>
+              </div>
+              <div class="room-card-body">
+                <div class="room-title-row"><h3>The shared room</h3><span class="room-capacity"><i class="bi bi-people" aria-hidden="true"></i> 4-8</span></div>
+                <p>Comfy bunks, your own reading light, and the best kind of strangers.</p>
+                <button class="text-link choose-room" type="button" data-room="The shared room">Take a look <i class="bi bi-arrow-up-right" aria-hidden="true"></i></button>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="room-card">
+              <div class="room-image-wrap">
+                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80" alt="Private double room with soft morning light" loading="lazy">
+                <span class="room-tag">FROM €89 / NIGHT</span>
+              </div>
+              <div class="room-card-body">
+                <div class="room-title-row"><h3>The private room</h3><span class="room-capacity"><i class="bi bi-people" aria-hidden="true"></i> 1-2</span></div>
+                <p>A little more space to call your own, with the whole house downstairs.</p>
+                <button class="text-link choose-room" type="button" data-room="The private room">Take a look <i class="bi bi-arrow-up-right" aria-hidden="true"></i></button>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="room-card">
+              <div class="room-image-wrap">
+                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80" alt="Calm private room with a leafy courtyard view" loading="lazy">
+                <span class="room-tag">FROM €119 / NIGHT</span>
+              </div>
+              <div class="room-card-body">
+                <div class="room-title-row"><h3>The garden room</h3><span class="room-capacity"><i class="bi bi-people" aria-hidden="true"></i> 1-3</span></div>
+                <p>Wake up slow with a courtyard view and room for one more.</p>
+                <button class="text-link choose-room" type="button" data-room="The garden room">Take a look <i class="bi bi-arrow-up-right" aria-hidden="true"></i></button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="house-section" id="the-house" aria-labelledby="house-title">
+      <div class="container-fluid p-0">
+        <div class="row g-0 align-items-stretch">
+          <div class="col-lg-6 house-photo">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&q=85" alt="A communal table ready for dinner at the hostel" loading="lazy">
+            <span class="photo-note">THE COMMON TABLE, EVERY EVENING</span>
+          </div>
+          <div class="col-lg-6 house-copy" id="neighborhood">
+            <p class="eyebrow eyebrow-lime">MORE THAN A BED</p>
+            <h2 id="house-title">Come for the city.<br>Stay for the people.</h2>
+            <p>There's always room at the table. Share a home-cooked meal, borrow a bike, swap a favorite neighborhood spot. This is your city, even if it's just for the weekend.</p>
+            <div class="amenities-list">
+              <span><i class="bi bi-wifi" aria-hidden="true"></i> Fast Wi-Fi</span>
+              <span><i class="bi bi-cup-hot" aria-hidden="true"></i> Breakfast from 7</span>
+              <span><i class="bi bi-bicycle" aria-hidden="true"></i> Bikes to borrow</span>
+              <span><i class="bi bi-geo-alt" aria-hidden="true"></i> 5 min to the metro</span>
+            </div>
+            <a class="house-link" href="#booking">Your room is waiting <i class="bi bi-arrow-up-right ms-2" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section" aria-label="Guest review">
+      <div class="container site-container quote-inner">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <blockquote>It felt like staying with friends I just hadn't met yet.</blockquote>
+        <p class="quote-credit">MAYA, CANADA <span class="quote-stars" aria-label="5 out of 5 stars">★★★★★</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-container footer-main">
+      <a class="navbar-brand brand-lockup footer-brand" href="#home">
+        <span class="brand-mark"><i class="bi bi-flower1" aria-hidden="true"></i></span>
+        <span>juniper<span class="brand-light">house</span></span>
+      </a>
+      <p>Nørrebrogade 18, 2200 Copenhagen<br>Come say hello: <a href="mailto:hello@juniperhouse.dk">hello@juniperhouse.dk</a></p>
+      <a class="footer-social" href="https://www.instagram.com/" aria-label="Juniper House on Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+    </div>
+    <div class="container site-container footer-bottom"><span>© 2026 Juniper House</span><span>Made for good company.</span><a href="#home">Back to top <i class="bi bi-arrow-up" aria-hidden="true"></i></a></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
